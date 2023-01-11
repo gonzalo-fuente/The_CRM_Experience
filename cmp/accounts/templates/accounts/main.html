@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,24 +10,11 @@
       rel="stylesheet"
       href="https://bootswatch.com/5/darkly/bootstrap.min.css"
     />
-
-    <style>
-      #logo {
-      }
-
-      #total-orders {
-        background-color: #4cb4c7;
-      }
-
-      #orders-delivered {
-        background-color: #7abecc;
-      }
-
-      #orders-pending {
-        background-color: #7cd1c0;
-      }
-    </style>
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static '/css/main.css' %}"
+    />
     <title>Dashboard Platform</title>
   </head>
   <body>
