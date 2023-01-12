@@ -42,7 +42,7 @@ each time we load the customers profile
 #Returns the total count for number of time a "Ball" was ordered by the first customer
 ballOrders = firstCustomer.order_set.filter(product__name="Ball").count()
 
-#Returns total count for each product orderd
+#Returns total count for each product ordered
 allOrders = {}
 
 for order in firstCustomer.order_set.all():
