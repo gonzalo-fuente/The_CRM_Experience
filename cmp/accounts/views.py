@@ -23,14 +23,6 @@ def registerPage(request):
 			user = form.save()
 			username = form.cleaned_data.get('username')
 
-			group = Group.objects.get(name='customer')
-			user.groups.add(group)
-
-			Customer.objects.create(
-				user=user,
-				name=user.username,
-				)
-
 			messages.success(request, 'Account was created for ' + username)
 			return redirect('login')
 
@@ -72,8 +64,9 @@ def home(request):
 	total_orders = orders.count()
 	delivered = orders.filter(status='Delivered').count()
 	pending = orders.filter(status='Pending').count()
+	last_five_orders = orders.order_by('-id')[:5]
 
-	context = {'orders':orders, 'customers':customers,
+	context = {'orders':last_five_orders, 'customers':customers,
 	'total_orders':total_orders,'delivered':delivered,
 	'pending':pending }
 
