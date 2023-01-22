@@ -3,9 +3,9 @@ from .models import *
 
 # Change default headers
 
-admin.site.site_header = "CMP Admin"
-admin.site.site_title = "CMP Admin Area"
-admin.site.index_title = "Welcome to the Customer Management Platform Administration Area"
+admin.site.site_header = "The CRM Experience"
+admin.site.site_title = "CRM Administration Area"
+admin.site.index_title = "Welcome to The CRM Experience Administration Area"
 
 # Register your models here.
 
