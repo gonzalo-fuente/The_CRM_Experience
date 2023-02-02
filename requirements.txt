@@ -2,3 +2,5 @@ django
 django-filter
 django-dotenv
 Pillow
+whitenoise
+gunicorn
