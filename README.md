@@ -13,13 +13,13 @@ Python, Django, HTML, Bootstrap, SQLite.
 ### Pre-builded login credentials
 
 - Admin user:
-  Username: user
-  Password: userpassword
+  - Username: user
+  - Password: userpassword
 
 Authorized to create, update and delete orders.
 
 - Customer / regular user:
-  Username: user1
-  Password: user1password
+  - Username: user1
+  - Password: user1password
 
 Authorized only to view orders and modify profile information.
